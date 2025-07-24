@@ -1,0 +1,123 @@
+ /*fonts*/
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+ /*shared styles*/
+.display-flex{
+    display: flex;
+}
+
+.text-primary{
+    color: #E95A08;
+}
+
+ /*header overall*/
+
+.header{
+    max-width: 1140px;
+    margin: 0 auto;   
+}
+
+/*main overall*/
+
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+ .navbar{
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .nav-item{
+    list-style: none;
+    margin: 2.2rem;
+    font-size: 1rem;
+    font-weight: bolder;
+ }
+
+ .nav-link{
+    text-decoration: none;
+ }
+
+ .nav-color{
+    color: #8987A1;
+ }
+
+ .nav-color-cart{
+    color: #000000;
+ }
+
+ .nav-color-home{
+    color: #252432;
+    font-weight: bold;
+ }
+
+
+ /*banner styles*/
+
+ .banner{
+    margin-top: 120px;
+ }
+
+ .banner-writings{
+    
+ }
+
+ .banner-title{
+    font-size: 4rem;
+ }
+
+ .banner-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+ }
+
+ .banner-img{
+    width: 100%;
+ }
+
+ /*our plants styles*/
+
+ .our-plants{
+    max-width: 1140px;
+    margin-top: 120px;
+    margin: 0 auto;
+ }
+
+ .plants-writings{
+    margin-bottom: 16px;
+ }
+
+ .plants-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+ }
+
+ .plants-title{
+
+ }
+
+ /*mobile device responsive*/
+
+ @media screen and (max-width: 576px){
+
+    .navbar, .navlinks{
+        flex-direction: column;
+    }
+ }
