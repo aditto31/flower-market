@@ -24,8 +24,9 @@
     color: #E95A08;
 }
 
- /*header overall*/
 
+ /*header overall*/
+ 
 .header{
     max-width: 1140px;
     margin: 0 auto;   
@@ -95,13 +96,15 @@
  /*our plants styles*/
 
  .our-plants{
-    max-width: 1140px;
     margin-top: 120px;
-    margin: 0 auto;
+    text-align: center;
  }
 
  .plants-writings{
+    max-width: 1140px;
+    margin: 0 auto;
     margin-bottom: 16px;
+    text-align: center;
  }
 
  .plants-description{
@@ -110,14 +113,78 @@
  }
 
  .plants-title{
-
+    font-weight: 800;
+    font-size: 3.1rem;
  }
 
+ /*Lover section*/
+ 
+ .lover-section{
+    justify-content: center;
+    align-items: center;
+    margin-top: 221px;
+    gap: 60px;
+ }
+
+
+ .lover-title{
+
+    font-size: 3.2rem;
+    font-weight: 700;
+ }
+
+ .lover-description{
+
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+ }
+
+ .lover-description li{
+
+    margin-bottom: 20px;
+ }
+
+ /*footer styles*/
+
+.footer-container{
+
+    max-width: 1120px;
+    margin: 50px 160px;
+    gap: 110px;
+}
+
+.footer-midleft ul li{
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.footer-midright ul li{
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.footer-midleft ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.footer-midright ul li a{
+    text-decoration: none;
+    color: gray
+    ;
+}
+
+.icons img{
+    margin-right: 15px;
+}
  /*mobile device responsive*/
 
  @media screen and (max-width: 576px){
 
-    .navbar, .navlinks{
+    .navbar, 
+    .nav-links, 
+    .banner{
         flex-direction: column;
     }
  }
