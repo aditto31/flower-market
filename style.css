@@ -1,3 +1,7 @@
+ 
+ body{
+    background-color: #FBF6F6;
+ }
  /*fonts*/
 
 .noto-serif-font {
@@ -30,6 +34,7 @@
 .header{
     max-width: 1140px;
     margin: 0 auto;   
+    background-color: #FBF6F6;
 }
 
 /*main overall*/
@@ -37,6 +42,7 @@
 .main{
     max-width: 1440px;
     margin: 0 auto;
+    background-color: #FBF6F6;
 }
 
 
@@ -95,34 +101,98 @@
 
  /*our plants styles*/
 
- .our-plants{
-    margin-top: 120px;
+ .our-plants-section {
     text-align: center;
- }
+    /* padding: 50px 20px; */
+    margin: 80px 85px;
 
- .plants-writings{
-    max-width: 1140px;
-    margin: 0 auto;
-    margin-bottom: 16px;
-    text-align: center;
- }
+}
 
- .plants-description{
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1.3rem;
- }
+/* .test {
+    width: 70px;
+    height: 384px;
+    
 
- .plants-title{
-    font-weight: 800;
-    font-size: 3.1rem;
- }
+} */
+
+.our-plants-title{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.orange-text {
+    color: #E95A08;
+    font-weight: bold;
+}
+
+.black-text {
+    color: #000;
+    font-weight: bold;
+}
+
+.our-plants-description {
+    padding: 0px 80px;
+    color: #757575;
+    font-size: 1.2rem;
+    font-weight: 100;
+
+}
+
+.plant-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px 190px;
+}
+
+.plant-card {
+    background-color: #FBF6F6;;
+}
+
+.plant-card img {
+    width: 155px;
+    height: auto;
+    border-radius: 2px;
+}
+
+.plant-name {
+    margin: 15px 0 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.plant-price {
+    font-weight: bold;
+    font-size: .9rem;
+    margin: 0px;
+}
+
+.add-to-cart {
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    width: 155px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 10px 0px;
+    cursor: pointer;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #d14e06;
+}
+
+
 
  /*Lover section*/
  
  .lover-section{
     justify-content: center;
     align-items: center;
-    margin-top: 221px;
+    margin-top: 94px;
     gap: 60px;
  }
 
@@ -145,11 +215,108 @@
 
     margin-bottom: 20px;
  }
+ 
+/*Latest deals section*/
+.latest-deals-section{
+    max-width: 1440px;
+    margin: 135px 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
+.deals-title{
+
+    font-size: 3.1rem;
+    font-weight: 700;
+}
+
+.deals-description{
+
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.deals-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 125px 152px;
+    gap: 28px;
+}
+
+.left-container{
+
+    height: 423px;
+    width: 367px;
+    margin-bottom: 40px;
+    
+}
+
+.left-card{
+    height: 200px;
+    width: 366px;
+    border-radius: 14px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+}
+
+.second-ana{
+    margin-top: 25px;
+}
+
+.right-card{
+
+    height: 423px;
+    width: 753px;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.bloom{
+    background-image: url(assets/deal-bloom.png);
+}
+
+.ana{
+    background-image: url(assets/deal-ana.png);
+}
+
+.zabo{
+    background-image: url(assets/deal-zabo.png);
+}
+
+.deals-left-img-title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.deals-right-img-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+.deals-img-anchor-text{
+
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+ 
  /*newsletter section*/
 
  .newsletter-section{
-    margin-top: 120px;
     max-width: 1440px;
     margin: 0 auto;
     background-image: url(assets/news-letter-bg.png);
@@ -184,11 +351,14 @@
 
 
  /*footer styles*/
+footer{
 
+    background-color: #FBF6F6;
+}
 .footer-container{
 
     max-width: 1120px;
-    margin: -50px 160px;
+    margin: -10px 160px;
     gap: 110px;
 }
 
@@ -221,7 +391,10 @@
 
     .navbar, 
     .nav-links, 
-    .banner{
+    .banner,
+    .out-plants,
+    .lover-section
+    ,.footer-container{
         flex-direction: column;
     }
  }
